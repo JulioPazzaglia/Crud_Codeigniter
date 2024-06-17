@@ -27,6 +27,7 @@ CREATE DATABASE IF NOT EXISTS ci4;
 USE ci4;
 
 -- Crear la tabla de productos
+
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
@@ -41,10 +42,15 @@ Asegúrate de configurar las variables de entorno en el archivo .env en la raíz
 # .env
 
 database.default.hostname = localhost
+
 database.default.database = ci4
+
 database.default.username = tu_usuario
+
 database.default.password = tu_contraseña
+
 database.default.DBDriver = MySQLi
+
 database.default.port = 3306
 
 # Instalación y uso
