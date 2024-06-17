@@ -13,21 +13,32 @@ app/
 │
 ├── Controllers/
 │   ├── Productos.php       # Controlador para gestionar los productos
+
 │
 ├── Models/
 │   ├── ProductosModel.php  # Modelo para interactuar con la base de datos de productos
+
 │
 ├── Views/
+
 │   ├── productos/
+
 │   │   ├── index.php       # Vista para listar todos los productos
+
 │   │   ├── create.php      # Vista para el formulario de creación de productos
+
 │   │   ├── ver.php         # Vista para ver detalles de un producto
 │
 public/
+
 │
+
 ├── .env                    # Archivo de configuración para variables de entorno
+
 ├── composer.json           # Archivo de configuración de Composer
+
 ├── .htaccess               # Archivo de configuración para Apache
+
 └── README.md               # Este archivo
 
 ## Configuración de la Base de Datos
@@ -63,6 +74,5 @@ database.default.DBDriver = MySQLi
 database.default.port = 3306
 
 
-
-Accede a la aplicación desde tu navegador.
+# Accede a la aplicación desde tu navegador.
 public/productos
