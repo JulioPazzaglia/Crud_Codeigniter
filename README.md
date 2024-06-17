@@ -8,38 +8,12 @@ Ver Detalles: Permite ver detalles específicos de un producto.
 
 ## Estructura del Proyecto
 El proyecto está organizado de la siguiente manera:
-
-app/
-│
-├── Controllers/
-│   ├── Productos.php       # Controlador para gestionar los productos
-
-│
-├── Models/
-│   ├── ProductosModel.php  # Modelo para interactuar con la base de datos de productos
-
-│
-├── Views/
-
-│   ├── productos/
-
-│   │   ├── index.php       # Vista para listar todos los productos
-
-│   │   ├── create.php      # Vista para el formulario de creación de productos
-
-│   │   ├── ver.php         # Vista para ver detalles de un producto
-│
-public/
-
-│
-
-├── .env                    # Archivo de configuración para variables de entorno
-
-├── composer.json           # Archivo de configuración de Composer
-
-├── .htaccess               # Archivo de configuración para Apache
-
-└── README.md               # Este archivo
+app/Controllers/: Contiene controladores para manejar la lógica de los productos.
+app/Models/: Incluye modelos para interactuar con la base de datos.
+app/Views/productos/: Vistas para mostrar la lista de productos, formulario de creación y vista detallada de cada producto.
+public/: Directorio raíz accesible públicamente, contiene archivos estáticos y el punto de entrada index.php.
+.env: Archivo de configuración para variables de entorno, incluyendo la configuración de la base de datos.
+composer.json: Archivo de configuración de Composer para gestionar dependencias PHP.
 
 ## Configuración de la Base de Datos
 Para utilizar la aplicación, asegúrate de configurar correctamente la base de datos y las variables de entorno. Aquí un ejemplo de cómo crear la base de datos en MySQL:
@@ -73,6 +47,15 @@ database.default.password = tu_contraseña
 database.default.DBDriver = MySQLi
 database.default.port = 3306
 
+# Instalación y uso
+
+1. Clonar el repositorio:
+git clone https://github.com/yanelricarte/Crud_Codeigniter.git
+
+2. Instalar las dependencias de Composer:
+composer install
+
+3. Ajustar las variables de entorno para que funcione correctamente
 
 # Accede a la aplicación desde tu navegador.
 public/productos
