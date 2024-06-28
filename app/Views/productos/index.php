@@ -11,13 +11,11 @@
     </tr>
     <?php foreach ($productos as $producto) : ?>
         <tr>
-            <td><?= $producto['id'] ?></td>
+            <td><?= $producto['codigo'] ?></td>
             <td><?= $producto['nombre'] ?></td>
             <td><?= $producto['precio'] ?></td>
             <td>
-            <a href="<?= base_url('productos/ver/' . $producto['id']) ?>">Ver más</a>
-                <a href="<?= base_url('productos/edit/' . $producto['id']) ?>">Editar</a>
-                <a href="<?= base_url('productos/delete/' . $producto['id']) ?>">Eliminar</a>
+                <a href="<?= base_url('productos/ver/' . $producto['codigo']) ?>">Ver más</a>
             </td>
         </tr>
     <?php endforeach; ?>
